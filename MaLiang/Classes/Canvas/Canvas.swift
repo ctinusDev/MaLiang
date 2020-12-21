@@ -168,6 +168,7 @@ open class Canvas: MetalView {
         
         /// initialize default brush
         defaultBrush = Brush(name: "maliang.default", textureID: nil, target: self)
+        defaultBrush.forceSensitive = 1
         currentBrush = defaultBrush
         
         /// initialize printer

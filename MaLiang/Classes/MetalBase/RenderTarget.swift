@@ -99,6 +99,7 @@ open class RenderTarget {
     
     internal func commitCommands() {
         commandBuffer?.commit()
+        commandBuffer?.waitUntilCompleted()
         commandBuffer = nil
     }
     
